@@ -13,6 +13,7 @@ import { MdSearch } from "react-icons/md";
 export default function BannerBusca() {
   return (
     <Box
+      as="section"
       bg="green.100"
       h={["250px", "380px", "420px"]}
       bgImage="url('/imgs/searchBG.png')"

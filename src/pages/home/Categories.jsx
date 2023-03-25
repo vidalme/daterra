@@ -12,7 +12,7 @@ import {
 
 export default function Categories() {
   return (
-    <Box my="3em" mx="1em">
+    <Box as="section" my="3em" mx="1em">
       <Heading as="h4" fontSize={["lg", "xl", "2xl"]} color="blackAlpha.800">
         Categorias
       </Heading>

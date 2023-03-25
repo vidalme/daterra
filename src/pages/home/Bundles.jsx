@@ -3,6 +3,7 @@ import Product from "../shopping/Product";
 export default function Bundles() {
   return (
     <Box
+      as="section"
       bg="green.100"
       borderRadius={["0rem", "2.2rem"]}
       my="4em"

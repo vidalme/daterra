@@ -1,14 +1,6 @@
 import { useState } from "react";
 
-import {
-  Flex,
-  HStack,
-  Spacer,
-  Grid,
-  GridItem,
-  Text,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, HStack, Grid, GridItem, Text } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 import { Outlet } from "react-router-dom";
@@ -25,9 +17,10 @@ export default function RootLayout() {
     <Flex justifyContent="center">
       {mobNavbar && <MobileNavbar setMobNavbar={setMobNavbar} />}
       <Grid h="100%" w={["100%", "95%"]} maxW="1280">
-        <GridItem>
+        <GridItem as="header">
           <Flex as="nav" alignItems="center" my="20px">
             <HStack fontWeight="bold" alignItems="center" gap=".5em" pl="1em">
+              {/* mover o icon hamburguer para dentro da barra de navegacao mobile, tudo assim modularizado */}
               <HamburgerIcon
                 onClick={() => {
                   setMobNavbar(true);
@@ -48,10 +41,10 @@ export default function RootLayout() {
             </Flex>
           </Flex>
         </GridItem>
-        <GridItem>
+        <GridItem as="main">
           <Outlet />
         </GridItem>
-        <GridItem>
+        <GridItem as="footer">
           <Footer />
         </GridItem>
       </Grid>

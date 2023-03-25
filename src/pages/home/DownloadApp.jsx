@@ -4,6 +4,7 @@ import { FaApple, FaAndroid } from "react-icons/fa";
 export default function DownloadApp() {
   return (
     <Flex
+      as="section"
       bg="green.100"
       borderRadius="2.2rem"
       my="4em"

@@ -12,7 +12,7 @@ import {
 
 export default function Testimonials() {
   return (
-    <Box my={["-1em", "0em", "5em"]} mx="1em">
+    <Box as="section" my={["-1em", "0em", "5em"]} mx="1em">
       <Heading
         as="h4"
         fontSize={["lg", "xl", "2xl"]}

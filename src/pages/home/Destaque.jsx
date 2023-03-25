@@ -4,7 +4,7 @@ import { MdArrowForward } from "react-icons/md";
 import Product from "../shopping/Product";
 export default function Destaque() {
   return (
-    <Box my="4em" mx="1em">
+    <Box as="section" my="4em" mx="1em">
       <Flex justifyContent="space-between">
         <Heading as="h4" fontSize={["lg", "xl", "2xl"]} color="blackAlpha.800">
           Mais vendidos

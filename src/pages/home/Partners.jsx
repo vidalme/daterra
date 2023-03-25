@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 Link;
 export default function Partners() {
   return (
-    <Box w="100%" justifyItems="end">
+    <Box as="section" w="100%" justifyItems="end">
       <Heading
         as="h4"
         fontSize={["lg", "xl", "2xl"]}

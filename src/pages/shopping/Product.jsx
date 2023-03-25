@@ -10,7 +10,7 @@ import {
 
 import { AiOutlineShopping } from "react-icons/ai";
 
-export default function Product() {
+export default function Product({ id, name, price, imgUrl }) {
   return (
     <Grid
       bg="white"
@@ -21,19 +21,19 @@ export default function Product() {
       p="1.5rem"
     >
       <Image
-        src="/imgs/products/banana.jpg"
+        src={"/imgs/products/" + imgUrl}
         alt="banana"
         boxSize="140px"
         justifySelf="center"
       />
       <Heading color="blackAlpha.800" as="h4" fontSize="lg" mt=".2rem">
-        Banana
+        {name}
       </Heading>
       <Text color="blackAlpha.700" fontSize="sm">
         1 kG
       </Text>
       <Text mt="0.5rem" color="blackAlpha.800" fontSize="lg" fontWeight="bold">
-        R$ 24,00
+        {price}
       </Text>
       <Flex gap=".6rem" alignItems="center" mt="1rem">
         <Square

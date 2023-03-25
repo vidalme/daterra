@@ -1,4 +1,12 @@
 import {
+  useState,
+  useReducer,
+  useContext,
+  useEffect,
+  createContext,
+} from "react";
+
+import {
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
@@ -30,10 +38,43 @@ const router = createBrowserRouter(
   )
 );
 
+export const ProductsContext = createContext(null);
+
+const cachedJson = JSON.parse(localStorage.getItem("user"));
+const cachedUser = cachedJson ? cachedJson : {};
+console.log(cachedUser);
+// localStorage.setItem("user", JSON.stringify(a));
+
 export default function LojaApp() {
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    async function fetchProdutos() {
+      try {
+        const res = await fetch("/data/db.json");
+        const json = await res.json();
+        setProdutos(json);
+      } catch (error) {
+        console.log("erro brabo");
+        console.log(error.message);
+      }
+    }
+    fetchProdutos();
+  }, []);
+
   return (
-    <ChakraProvider theme={brandTheme}>
-      <RouterProvider router={router} />
-    </ChakraProvider>
+    <ProductsContext.Provider value={{ produtos }}>
+      <ChakraProvider theme={brandTheme}>
+        <RouterProvider router={router} />
+      </ChakraProvider>
+    </ProductsContext.Provider>
   );
+}
+
+function createUser(name, cart, favoriteProducts) {
+  return (user = {
+    name,
+    cart,
+    favoriteProducts,
+  });
 }

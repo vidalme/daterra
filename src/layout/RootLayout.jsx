@@ -1,13 +1,16 @@
 import { useState } from "react";
 
-import { Flex, HStack, Grid, GridItem, Text } from "@chakra-ui/react";
-
-import { Outlet } from "react-router-dom";
-
+//pages
 import Navbar from "../components/Navbar";
 import MobileNavbar from "../components/MobileNavbar";
 import UserSession from "../components/UserSession";
 import Footer from "../components/Footer";
+
+//navegacao
+import { Outlet } from "react-router-dom";
+
+//css
+import { Flex, HStack, Grid, GridItem, Text } from "@chakra-ui/react";
 
 export default function RootLayout() {
   const [mobNavbar, setMobNavbar] = useState(false);
@@ -40,7 +43,7 @@ function Logo() {
   return (
     <HStack fontWeight="bold" alignItems="center" gap=".5em" pl="1em">
       <Text fontSize={["xl", "2xl", "3xl"]} color="green.500">
-        daTerra
+        Toda Feira
       </Text>
     </HStack>
   );

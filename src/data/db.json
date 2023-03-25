@@ -1,0 +1,256 @@
+{
+  "frutas": [
+    {
+      "id": 1001,
+      "nome": "Morango",
+      "preco": "80,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "morango.jpg"
+    },
+    {
+      "id": 1002,
+      "nome": "Tangerina",
+      "preco": "65,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "tangerina.jpg"
+    },
+    {
+      "id": 1003,
+      "nome": "Banana",
+      "preco": "40,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "banana.jpg"
+    },
+    {
+      "id": 1004,
+      "nome": "Limão",
+      "preco": "33,50",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "limao.jpg"
+    },
+    {
+      "id": 1005,
+      "nome": "Abacaxi",
+      "preco": "52,70",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "abacaxi.jpg"
+    }
+  ],
+
+  "verduras": [
+    {
+      "id": 1006,
+      "nome": "Alface",
+      "preco": "28,50",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "alface.jpg"
+    },
+    {
+      "id": 1007,
+      "nome": "Cebolinha",
+      "preco": "34,20",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "cebolinha.jpg"
+    },
+    {
+      "id": 1008,
+      "nome": "Couve Flor",
+      "preco": "18,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "couveflor.jpg"
+    },
+    {
+      "id": 1009,
+      "nome": "Salsinha",
+      "preco": "27,70",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "salsinha.jpg"
+    },
+    {
+      "id": 1010,
+      "nome": "Mastruz",
+      "preco": "8,10",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "mastruz.jpg"
+    }
+  ],
+
+  "legumes": [
+    {
+      "id": 1011,
+      "nome": "Abobora",
+      "preco": "11,50",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "abobora.jpg"
+    },
+    {
+      "id": 1012,
+      "nome": "Batata",
+      "preco": "8,75",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "batata.jpg"
+    },
+    {
+      "id": 1013,
+      "nome": "Cenoura",
+      "preco": "4,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "cenoura.jpg"
+    },
+    {
+      "id": 1014,
+      "nome": "Milho Verde",
+      "preco": "7,25",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "milhoverde.jpg"
+    },
+    {
+      "id": 1015,
+      "nome": "Gengibre",
+      "preco": "35,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "gengibre.jpg"
+    }
+  ],
+  "lacticinios": [
+    {
+      "id": 1016,
+      "nome": "Leite",
+      "preco": "11,50",
+      "unidade": "Litro",
+      "destaque": false,
+      "imgUrl": "leite.jpg"
+    },
+    {
+      "id": 1017,
+      "nome": "Queijo",
+      "preco": "38,75",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "queijo.jpg"
+    },
+    {
+      "id": 1018,
+      "nome": "Manteiga",
+      "preco": "4,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "manteiga.jpg"
+    },
+    {
+      "id": 1019,
+      "nome": "Nata",
+      "preco": "15,25",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "nata.jpg"
+    },
+    {
+      "id": 1020,
+      "nome": "Ghee",
+      "preco": "32,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "ghee.jpg"
+    }
+  ],
+  "carnes": [
+    {
+      "id": 1021,
+      "nome": "Bacon",
+      "preco": "42,50",
+      "unidade": "Kilo",
+      "destaque": false,
+      "imgUrl": "bacon.jpg"
+    },
+    {
+      "id": 1022,
+      "nome": "Peixe",
+      "preco": "35,75",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "peixe.jpg"
+    },
+    {
+      "id": 1023,
+      "nome": "Sobrecoxa",
+      "preco": "25,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "sobrecoxa.jpg"
+    },
+    {
+      "id": 1024,
+      "nome": "Pernil",
+      "preco": "43,70",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "pernil.jpg"
+    },
+    {
+      "id": 1025,
+      "nome": "Picanha",
+      "preco": "54,00",
+      "unidade": "kilo",
+      "destaque": false,
+      "imgUrl": "picanha.jpg"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 1026,
+      "nome": "Sucos",
+      "preco": "22,50",
+      "unidade": "Litro",
+      "destaque": false,
+      "imgUrl": "sucodelaranja.jpg"
+    },
+    {
+      "id": 1027,
+      "nome": "Kombucha",
+      "preco": "28,20",
+      "unidade": "Litro",
+      "destaque": false,
+      "imgUrl": "kombucha.jpg"
+    },
+    {
+      "id": 1028,
+      "nome": "Vinho",
+      "preco": "48,00",
+      "unidade": "Litro",
+      "destaque": false,
+      "imgUrl": "vinho.jpg"
+    },
+    {
+      "id": 1029,
+      "nome": "Smoothies",
+      "preco": "53,70",
+      "unidade": "Litro",
+      "destaque": false,
+      "imgUrl": "smoothie.jpg"
+    },
+    {
+      "id": 1030,
+      "nome": "Detox verde",
+      "preco": "36,00",
+      "unidade": "Litro",
+      "destaque": false,
+      "imgUrl": "detox.jpg"
+    }
+  ]
+}

@@ -6,6 +6,7 @@
       "preco": "80,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "morango.jpg"
     },
     {
@@ -14,6 +15,7 @@
       "preco": "65,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "tangerina.jpg"
     },
     {
@@ -22,6 +24,7 @@
       "preco": "40,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "banana.jpg"
     },
     {
@@ -30,6 +33,7 @@
       "preco": "33,50",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "limao.jpg"
     },
     {
@@ -38,6 +42,7 @@
       "preco": "52,70",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "abacaxi.jpg"
     }
   ],
@@ -49,6 +54,7 @@
       "preco": "28,50",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "alface.jpg"
     },
     {
@@ -57,6 +63,7 @@
       "preco": "34,20",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "cebolinha.jpg"
     },
     {
@@ -65,6 +72,7 @@
       "preco": "18,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "couveflor.jpg"
     },
     {
@@ -73,6 +81,7 @@
       "preco": "27,70",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "salsinha.jpg"
     },
     {
@@ -81,6 +90,7 @@
       "preco": "8,10",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "mastruz.jpg"
     }
   ],
@@ -92,6 +102,7 @@
       "preco": "11,50",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "abobora.jpg"
     },
     {
@@ -100,6 +111,7 @@
       "preco": "8,75",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "batata.jpg"
     },
     {
@@ -108,6 +120,7 @@
       "preco": "4,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "cenoura.jpg"
     },
     {
@@ -116,6 +129,7 @@
       "preco": "7,25",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "milhoverde.jpg"
     },
     {
@@ -124,6 +138,7 @@
       "preco": "35,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "gengibre.jpg"
     }
   ],
@@ -134,6 +149,7 @@
       "preco": "11,50",
       "unidade": "Litro",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "leite.jpg"
     },
     {
@@ -142,6 +158,7 @@
       "preco": "38,75",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "queijo.jpg"
     },
     {
@@ -150,6 +167,7 @@
       "preco": "4,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "manteiga.jpg"
     },
     {
@@ -158,6 +176,7 @@
       "preco": "15,25",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "nata.jpg"
     },
     {
@@ -166,6 +185,7 @@
       "preco": "32,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "ghee.jpg"
     }
   ],
@@ -176,6 +196,7 @@
       "preco": "42,50",
       "unidade": "Kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "bacon.jpg"
     },
     {
@@ -184,6 +205,7 @@
       "preco": "35,75",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "peixe.jpg"
     },
     {
@@ -192,6 +214,7 @@
       "preco": "25,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "sobrecoxa.jpg"
     },
     {
@@ -200,6 +223,7 @@
       "preco": "43,70",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "pernil.jpg"
     },
     {
@@ -208,6 +232,7 @@
       "preco": "54,00",
       "unidade": "kilo",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "picanha.jpg"
     }
   ],
@@ -218,6 +243,7 @@
       "preco": "22,50",
       "unidade": "Litro",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "sucodelaranja.jpg"
     },
     {
@@ -226,6 +252,7 @@
       "preco": "28,20",
       "unidade": "Litro",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "kombucha.jpg"
     },
     {
@@ -234,6 +261,7 @@
       "preco": "48,00",
       "unidade": "Litro",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "vinho.jpg"
     },
     {
@@ -242,6 +270,7 @@
       "preco": "53,70",
       "unidade": "Litro",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "smoothie.jpg"
     },
     {
@@ -250,6 +279,7 @@
       "preco": "36,00",
       "unidade": "Litro",
       "destaque": false,
+      "favorito": false,
       "imgUrl": "detox.jpg"
     }
   ]

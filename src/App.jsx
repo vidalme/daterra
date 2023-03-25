@@ -1,11 +1,7 @@
 import LojaApp from "./LojaApp";
 
 function App() {
-  return (
-    <div>
-      <LojaApp />
-    </div>
-  );
+  return <LojaApp />;
 }
 
 export default App;

@@ -7,17 +7,56 @@ import {
   Square,
   Circle,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useContext, useReducer } from "react";
+import { UserContext } from "../../LojaApp";
 
 import { AiOutlineShopping } from "react-icons/ai";
 
-export default function Product(product) {
-  const [counter, setCounter] = useState(0);
-  function addToCart({ product, ammount }) {
-    console.log(product.name);
-    console.log(ammount);
-    setCounter(0);
+function createInitialState(user) {
+  return { counter: 0, user: { ...user } };
+}
+
+function reducer(state, action) {
+  console.log(state.user);
+  switch (action.type) {
+    case "DECREMENT":
+      if (state.counter - 1 <= 0) {
+        return { counter: 0, user: { ...state.user } };
+      }
+      return { counter: state.counter - 1 };
+
+    case "INCREMENT":
+      return { counter: state.counter + 1, user: { ...state.user } };
+
+    case "ADD_TO_CART":
+      if (state.counter > 0) {
+        console
+          .log
+          // `adicionar no carrinho ${state.counter} ${action.payload.name} para o ${state.user.name}`
+          ();
+
+        const newProducts = [];
+        for (let i = 0; i < state.counter; i++) {
+          newProducts.push(action.payload);
+        }
+        return {
+          counter: 0,
+          user: { ...state.user, cart: [...state.user.cart, ...newProducts] },
+        };
+      } else {
+        return { counter: 0, user: { ...state.user } };
+      }
+
+    default:
+      break;
   }
+}
+
+export default function Product(produto) {
+  const { user } = useContext(UserContext);
+
+  const [state, dispatch] = useReducer(reducer, user, createInitialState);
+
   return (
     <Grid
       bg="white"
@@ -28,19 +67,19 @@ export default function Product(product) {
       p="1.5rem"
     >
       <Image
-        src={"/imgs/products/" + product.imgUrl}
+        src={"/imgs/products/" + produto.imgUrl}
         alt="banana"
         boxSize="140px"
         justifySelf="center"
       />
       <Heading color="blackAlpha.800" as="h4" fontSize="lg" mt=".2rem">
-        {product.name}
+        {produto.name}
       </Heading>
       <Text color="blackAlpha.700" fontSize="sm">
         1 kG
       </Text>
       <Text mt="0.5rem" color="blackAlpha.800" fontSize="lg" fontWeight="bold">
-        {product.price}
+        {produto.price}
       </Text>
       <Flex gap=".6rem" alignItems="center" mt="1rem">
         <Square
@@ -56,13 +95,12 @@ export default function Product(product) {
           _hover={{ bg: "green.400", color: "white" }}
           userSelect="none"
           onClick={() => {
-            counter - 1 >= 0 && setCounter(counter - 1);
-            ('dispatch({ type: "DECREMENT" });');
+            dispatch({ type: "DECREMENT" });
           }}
         >
           -
         </Square>
-        <Text fontSize="xl">{counter}</Text>
+        <Text fontSize="xl">{state.counter}</Text>
         <Square
           size="xs"
           w="30px"
@@ -77,8 +115,7 @@ export default function Product(product) {
           _hover={{ bg: "green.400", color: "white" }}
           userSelect="none"
           onClick={() => {
-            setCounter(counter + 1);
-            ('dispatch({ type: "INCREMENT" });');
+            dispatch({ type: "INCREMENT" });
           }}
         >
           +
@@ -90,7 +127,8 @@ export default function Product(product) {
           cursor="pointer"
           _hover={{ bg: "green.500" }}
           onClick={() => {
-            addToCart({ product: product, ammount: counter });
+            console.log(user);
+            dispatch({ type: "ADD_TO_CART", payload: produto });
           }}
         >
           <AiOutlineShopping color="white" size="1.2rem" />

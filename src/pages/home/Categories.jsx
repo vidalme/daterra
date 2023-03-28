@@ -1,14 +1,6 @@
 import { TbApple, TbSalad, TbCarrot, TbCheese, TbMeat } from "react-icons/tb";
 import { MdOutlineLocalDrink } from "react-icons/md";
-import {
-  Text,
-  Flex,
-  Box,
-  Heading,
-  Center,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Text, Box, Heading, Center, Grid, GridItem } from "@chakra-ui/react";
 
 export default function Categories() {
   return (

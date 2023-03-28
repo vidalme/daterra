@@ -39,21 +39,25 @@ const router = createBrowserRouter(
 );
 
 export const ProductsContext = createContext(null);
+export const UserContext = createContext(null);
 
 const cachedJson = JSON.parse(localStorage.getItem("user"));
-const cachedUser = cachedJson ? cachedJson : {};
-console.log(cachedUser);
+const cachedUser = cachedJson ? cachedJson : createNewUser();
+
 // localStorage.setItem("user", JSON.stringify(a));
 
 export default function LojaApp() {
   const [produtos, setProdutos] = useState([]);
+  const [user, setUser] = useState([]);
 
   useEffect(() => {
     async function fetchProdutos() {
       try {
         const res = await fetch("/data/db.json");
+
         const json = await res.json();
         setProdutos(json);
+        setUser(cachedUser);
       } catch (error) {
         console.log("erro brabo");
         console.log(error.message);
@@ -64,17 +68,19 @@ export default function LojaApp() {
 
   return (
     <ProductsContext.Provider value={{ produtos }}>
-      <ChakraProvider theme={brandTheme}>
-        <RouterProvider router={router} />
-      </ChakraProvider>
+      <UserContext.Provider value={{ user }}>
+        <ChakraProvider theme={brandTheme}>
+          <RouterProvider router={router} />
+        </ChakraProvider>
+      </UserContext.Provider>
     </ProductsContext.Provider>
   );
 }
 
-function createUser(name, cart, favoriteProducts) {
-  return (user = {
-    name,
-    cart,
-    favoriteProducts,
-  });
+function createNewUser() {
+  return {
+    name: "fulano",
+    cart: [],
+    favoriteProducts: [],
+  };
 }

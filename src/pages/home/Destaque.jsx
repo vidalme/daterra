@@ -22,7 +22,6 @@ export default function Destaque() {
         produto.destaque && maisVendidos.push(produto);
       }
     }
-
     return maisVendidos;
   }
 
